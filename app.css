@@ -1,0 +1,125 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 2.97vh;
+  width: 97vw;
+  text-align: center;
+  margin-bottom: 0.1em;
+}
+
+a[href^="#"] {
+  border-bottom: 1vh solid transparent;
+}
+
+a[href^="#"]:hover {
+  background-color: hsl(203, 92%, 75%, 0.2);
+}
+
+a[href^="#"]:focus {
+  border-bottom: 1vh solid steelblue;
+}
+
+.bigtxt {
+  font-size: 5.8vh;
+}
+
+.smalltxt {
+  font-size: 2.9vh;
+}
+
+.box2 {
+  /* border: 1px solid black; */
+  width: 97vw;
+  height: 87vh;
+  margin-bottom: 0.5rem;
+  background-color: hsla(0, 0%, 76%, 0.3);
+  border-top: 0.1em solid hsl(0, 0%, 76%, 0.5);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+a[href^="#"] {
+  flex-basis: 20%;
+  /*  border: 1px solid black; background-color: lightpink; */
+  text-align: center;
+  font-size: 3vh;
+  background-clip: border-box;
+  text-decoration: none;
+  flex-grow: 1;
+
+  padding: 3vh 3vh;
+}
+
+.box1 {
+  /* border: 1px solid black; */
+  width: 97vw;
+  height: 9vh;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  border-top: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+hr {
+  color: #ffffff;
+  margin-bottom: 0.2vh;
+}
+
+/* @media screen and (max-width: 1367px) */
+@media (orientation: landscape) {
+
+  p {
+    color: green;
+    font-size: 0.5em;
+  }
+
+  .box2 {
+    height: 83vh;
+  }
+}
+
+/* @media screen and (min-width 416) and (max-width: 824px) {
+
+  p {
+    color: rebeccapurple;
+    font-size: 0.7em;
+  }
+} */
+
+
+/* screen and (max-width: 415px) */
+
+@media (orientation: portrait) {
+
+  p {
+    font-size: 1.5vw;
+  }
+
+  a[href^="#"] {
+    font-size: 2.3vw;
+  }
+
+  .box1,
+  .box2 {
+    width: 95vw;
+  }
+
+  .box1 {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
